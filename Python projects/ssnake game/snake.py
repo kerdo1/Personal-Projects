@@ -7,12 +7,13 @@ class SNAKE:
 		self.direction = Vector2(0,0)
 		self.new_block = False
 
-		# ADDING GRAPHICS TO SNAKE
+		# ADDING GRAPHICS TO SNAKE, need to have png for corners too
+		#head
 		self.head_up = pygame.image.load('Graphics/head_up.png').convert_alpha()
 		self.head_down = pygame.image.load('Graphics/head_down.png').convert_alpha()
 		self.head_right = pygame.image.load('Graphics/head_right.png').convert_alpha()
 		self.head_left = pygame.image.load('Graphics/head_left.png').convert_alpha()
-		
+		#tail
 		self.tail_up = pygame.image.load('Graphics/tail_up.png').convert_alpha()
 		self.tail_down = pygame.image.load('Graphics/tail_down.png').convert_alpha()
 		self.tail_right = pygame.image.load('Graphics/tail_right.png').convert_alpha()
